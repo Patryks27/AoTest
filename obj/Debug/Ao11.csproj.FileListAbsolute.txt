@@ -25,3 +25,4 @@ D:\studia\sem5\Ao\ProjTEst\AoTest\obj\Debug\Ao11.csproj.GenerateResource.cache
 D:\studia\sem5\Ao\ProjTEst\AoTest\obj\Debug\Ao11.csproj.CoreCompileInputs.cache
 D:\studia\sem5\Ao\ProjTEst\AoTest\obj\Debug\Ao11.exe
 D:\studia\sem5\Ao\ProjTEst\AoTest\obj\Debug\Ao11.pdb
+D:\studia\sem5\Ao\ProjTEst\AoTest\obj\Debug\Ao11.csproj.SuggestedBindingRedirects.cache

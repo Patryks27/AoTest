@@ -54,29 +54,39 @@ namespace Ao11
                 Error.Visible = false;
 
                 this.Hide();
-
-                string SQLConnection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='D:\studia\sem5\Architektura komputerowa\zaj11\Ao11\database.mdf';Integrated Security=True";// @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='database.mdf';Integrated Security=True";
+                string SQLConnection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|database.mdf;Integrated Security=True";// @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='database.mdf';Integrated Security=True";
                 SqlConnection conn2;
                 conn2 = new SqlConnection();
                 conn2.ConnectionString = SQLConnection;
 
-                conn2.Open();
-                //string value = String.Format("VALUES({0}, '{1}', '{2}', '{3}')", imie, nazwisko, email, uczelnia);
 
-                string sqlCmd = @"INSERT INTO Users ( Imie, Nazwisko, Email, Uczelnia)"; 
+                string value = String.Format("'{0}', '{1}', '{2}', '{3}'", imie, nazwisko, email, uczelnia);
+
+                //string sqlCmd = @"INSERT INTO Users ( Imie, Nazwisko, Email, Uczelnia)" + value;
                 //                " + "VALUES('{0}', '{1}', '{2}', '{3}')",imie, nazwisko, email, uczelnia;
 
+                string query = "EXEC  ADDUSER "+ value;//(@imie, @nazwisko, @email, @uczelnia)";
 
-                SqlCommand command = new SqlCommand(sqlCmd, conn2);
+                using (SqlCommand command = new SqlCommand(query, conn2))
+                {
+                    //command.Parameters.AddWithValue("@imie", imie);
+                    //command.Parameters.AddWithValue("@nazwisko", nazwisko);
+                    //command.Parameters.AddWithValue("@email", email);
+                    //command.Parameters.AddWithValue("@uczelnia", uczelnia);
+                    conn2.Open();
+                    command.ExecuteNonQuery();
+                }
 
-                SqlDataReader reader = command.ExecuteReader();
+
+                //SqlDataReader reader = command.ExecuteReader();
+
                 //try
                 //{
+                //    reader.me
                 //    while (reader.Read())
                 //    {
 
-
-                //       // MessageBox.Show(  reader["Imie"].ToString());
+                //         MessageBox.Show(  reader[""].ToString());
                 //    }
                 //}
                 //finally
@@ -84,7 +94,7 @@ namespace Ao11
                 //    // Always call Close when done reading.
                 //    reader.Close();
                 //}
-                SqlCommand cmd = new SqlCommand(sqlCmd, conn2);
+                conn2.Close();
 
 
                 AddFormularzView newView = new AddFormularzView();

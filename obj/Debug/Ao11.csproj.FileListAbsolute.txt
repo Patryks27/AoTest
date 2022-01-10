@@ -1,0 +1,14 @@
+D:\studia\sem5\Architektura komputerowa\zaj11\Ao11\bin\Debug\Ao11.exe.config
+D:\studia\sem5\Architektura komputerowa\zaj11\Ao11\bin\Debug\Ao11.exe
+D:\studia\sem5\Architektura komputerowa\zaj11\Ao11\bin\Debug\Ao11.pdb
+D:\studia\sem5\Architektura komputerowa\zaj11\Ao11\obj\Debug\Ao11.csproj.AssemblyReference.cache
+D:\studia\sem5\Architektura komputerowa\zaj11\Ao11\obj\Debug\Ao11.Form1.resources
+D:\studia\sem5\Architektura komputerowa\zaj11\Ao11\obj\Debug\Ao11.Properties.Resources.resources
+D:\studia\sem5\Architektura komputerowa\zaj11\Ao11\obj\Debug\Ao11.csproj.GenerateResource.cache
+D:\studia\sem5\Architektura komputerowa\zaj11\Ao11\obj\Debug\Ao11.csproj.CoreCompileInputs.cache
+D:\studia\sem5\Architektura komputerowa\zaj11\Ao11\obj\Debug\Ao11.exe
+D:\studia\sem5\Architektura komputerowa\zaj11\Ao11\obj\Debug\Ao11.pdb
+D:\studia\sem5\Architektura komputerowa\zaj11\Ao11\obj\Debug\Ao11.AddFormularzView.resources
+D:\studia\sem5\Architektura komputerowa\zaj11\Ao11\bin\Debug\database.mdf
+D:\studia\sem5\Architektura komputerowa\zaj11\Ao11\bin\Debug\database_log.ldf
+D:\studia\sem5\Architektura komputerowa\zaj11\Ao11\obj\Debug\Ao11.csproj.SuggestedBindingRedirects.cache
